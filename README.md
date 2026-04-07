@@ -22,7 +22,7 @@ Wi-Fi Channel State Information (CSI) has emerged as a promising sensing modalit
 ### Architecture
 
 <p align="center">
-  <img src="Figs/flow.pdf" alt="GF-BiLSTM Architecture" width="90%">
+  <img src="Figs/flow.png" alt="GF-BiLSTM Architecture" width="90%">
 </p>
 
 Complex CSI is split into amplitude and phase. The phase branch performs temporal unwrapping and optional packet-wise linear sanitization, then per-time layer normalization. Each stream is encoded by a 1-layer BiLSTM, their per-time features are fused by a learned gate, and a deeper BiLSTM with a final classifier produces action labels.
